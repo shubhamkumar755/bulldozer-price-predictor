@@ -2,7 +2,6 @@
 
 This project is a machine learning solution to predict the **future sale prices of bulldozers** based on their usage history and configuration data. The dataset is sourced from the [Kaggle Bluebook for Bulldozers competition](https://www.kaggle.com/c/bluebook-for-bulldozers).
 
-
 ---
 
 ## 📂 Dataset
@@ -10,18 +9,6 @@ This project is a machine learning solution to predict the **future sale prices 
 - **Source:** Kaggle Bluebook for Bulldozers
 - **Features:** Machine ID, Model ID, sale date, product size, usage hours, etc.
 - **Target:** SalePrice
-
----
-
-## 📊 Evaluation Metric
-
-We use **Root Mean Squared Log Error (RMSLE)** as the evaluation metric:
-
-\[
-RMSLE = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( \log(p_i + 1) - \log(a_i + 1) \right)^2 }
-\]
-
-This metric penalizes underestimation more than overestimation and handles large ranges of values better.
 
 ---
 
